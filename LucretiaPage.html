@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⋞ Lucretia ⋟</title>
+    <style>
+
+        /* Background image. */
+        body {
+            background-image: url("https://rare-gallery.com/uploads/posts/120485-red-roses-rose-flowers-dark-background-4k.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        div {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Formatting column size and position. */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .left, .right {
+            width: 30%;
+            margin-top: 27%;
+        }
+
+        .middle {
+            width: 40%;
+            margin-top: 18%;
+        }
+
+        /* Centering columns. */
+        .row {
+            margin-left: 20px;
+            margin-right: auto;
+            width: 1300px;
+        }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Formatting column content.*/
+        .left, .right {
+            /* adjusts text height. */
+            line-height: 16px;
+            /* width: 300px;
+            height: 400px; */
+            overflow: hidden;
+            /*overflow-x: hidden;*/
+            border: 5px solid rgba(159, 96, 159, .2);
+            /* background: rgba(207, 175, 207, .8); */
+            scrollbar-color: rgb(226, 78, 102) rgb(226, 72, 97);
+            font-family: Georgia;
+            color: rgb(243, 150, 150);
+        }
+
+        .middle {
+            width: 400px;
+            height: 600px;
+            background: rgba(221, 184, 207, .3);
+            font-family: Georgia;
+            text-align: center;
+            color: rgba(217, 46, 33, .6);
+        }
+
+        .left {
+            background-image: url("https://cdn.discordapp.com/attachments/752492618948018187/1097349542539690054/78438196_p0_master1200.webp");
+            background-position: right;
+            width: 300px;
+            height: 400px;
+            /*overflow-y: hidden;*/
+        }
+
+        .right {
+            background-image: url("https://cdn.discordapp.com/attachments/752492618948018187/1097349542539690054/78438196_p0_master1200.webp");
+            width: 600px;
+            height: 400px;
+            /* background-position: top; */
+            /* animation: hide-scroll 3.9s; */
+        }
+
+        /* @keyframes hide-scroll {
+                    from,
+                    to {
+                    overflow: hidden;
+                    }
+               } */
+
+        /* Formatting text boxes. */
+        .textboxleft {
+            line-height: 16px;
+            margin: 10px;
+            margin-top: 4.5%;
+            margin-left: 5%;
+            padding: 8px;
+            padding-top: 1px;
+            width: 240px;
+            height: 93%;
+            background-color: rgba(38, 5, 11, 0.7);
+            border: 3px solid rgba(231, 219, 221, 0.8);
+        }
+
+        .textboxright {
+            line-height: 18px;
+            margin: 10px;
+            margin-top: 4.5%;
+            margin-left: 5%;
+            padding: 8px;
+            padding-top: 1px;
+            width: 500px;
+            height: 93%;
+            background-color: rgba(38, 5, 11, 0.7);
+            border: 3px solid rgba(231, 219, 221, 0.8);
+            overflow:auto;
+            overflow-x: hidden;
+            scrollbar-color: rgb(226, 78, 102) rgb(226, 72, 97);
+        }
+
+        /* Formatting column fade. */
+        .fade-in {
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Formatting right column text fade out. */
+        .fade-out {
+            opacity: 0;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeOutOpacity {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Hiding text in right column. */
+        /*.hidden {
+                    display: none;
+                }*/
+
+        /* Scrolling content in right column. */
+        .pagescroller {
+            text-align: center;
+        }
+
+        /* Changing hyperlink color in page scroller. */
+        .underline {
+            color: rgba(217, 46, 33, .6);
+        }
+
+            /* Changing hyperlink underline color in page scroller. */
+            .underline span {
+                color: rgba(217, 46, 33, .6);
+            }
+
+        /* Setting up page display. */
+        #page1 {
+            display: none;
+        }
+
+            #page1:target {
+                display: block;
+            }
+
+        #page2 {
+            display: none;
+        }
+
+            #page2:target {
+                display: block;
+            }
+
+        #page3 {
+            display: none;
+        }
+
+            #page3:target {
+                display: block;
+            }
+
+        #page4 {
+            display: none;
+        }
+
+            #page4:target {
+                display: block;
+            }
+
+        #page5 {
+            display: none;
+        }
+
+            #page5:target {
+                display: block;
+            }
+
+        #page6 {
+            display: none;
+        }
+
+            #page6:target {
+                display: block;
+            }
+
+        #page7 {
+            display: none;
+        }
+
+            #page7:target {
+                display: block;
+            }
+
+        #page8 {
+            display: none;
+        }
+
+            #page8:target {
+                display: block;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>The Calamity</h2> -->
+
+    <div class="row">
+        <div class="column left fade-in">
+            <!-- basic info left column -->
+            <div class="textboxleft">
+                <h2 style="font-style: italic">a simple study</h2>
+                <p style="font-size: 80%"><b><em>general info:</em></b></p>
+                <p>
+                    <b>Name</b>: Lucretia<br>
+                    <b>Alias</b>: Black Rose<br>
+                    <b>Gender</b>: Female<br>
+                    <b>Race</b>: Japanese-American<br> 
+                    <b>Nationality</b>: American<br>                   
+                    <b>Occupation</b>: Talon Agent<br>                  
+                    <b>Age</b>: 25<br>                    
+                    <b>Sexuality</b>: Pansexual<br>
+                    <h5 style="color: rgba(217, 46, 33, .6)"><b><em>❝The rose has thorns only for those who would gather it.❞ </em></b></h5>
+                <div class="pagescroller">
+                    <a class="underline" href="#page1"><span>1</span></a>
+                    <a class="underline" href="#page2"><span>2</span></a>
+                    <a class="underline" href="#page3"><span>3</span></a>
+                    <a class="underline" href="#page4"><span>4</span></a>
+                    <a class="underline" href="#page5"><span>5</span></a>
+                    <a class="underline" href="#page6"><span>6</span></a>
+                    <a class="underline" href="#page7"><span>7</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="column middle">
+            <!-- image of Irae in the center column -->
+            <p><img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b66e836d-f919-4abf-8bf0-371dc21cccbe/dej6q84-c3a88b3a-ed8c-48c1-a006-585bc760b4ba.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I2NmU4MzZkLWY5MTktNGFiZi04YmYwLTM3MWRjMjFjY2NiZVwvZGVqNnE4NC1jM2E4OGIzYS1lZDhjLTQ4YzEtYTAwNi01ODViYzc2MGI0YmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.TFMDP41H-0FrJTu0cfEanC5EMJ3rJuwZzwX887HLElY" width="380" height="485"></p>
+            <h3>ʚ the Calamity ɞ</h3>
+        </div>
+
+        <div class="column right fade-in">
+            <!-- biography right column-->
+            <div class="textboxright">
+                <h2 style="font-style: italic">a simple history</h2>
+                <!-- <center><p style="font-size: 60%"><em>trigger warning: sexual misconduct.</em></p></center> -->
+                <!-- <p id="content">She remembers nothing of her origins except awakening in a crater. Flashes of hot white and crimson flash as she tries to recall anything beyond awakening, a searing pain following. Finding a place to stay proved difficult, ragged after climbing out of the crater and managing to find a town only after hours of searching.</p> -->
+                <p style="font-size: 80%"><b><em>appearance:</em></b></p>
+                <p><b>Height</b>: 5’9”<br>
+                <b>Weight</b>: 153 lbs<br>
+                <b>Hair</b>: Obsidian, knee-length<br>
+                <b>Skin</b>: Porcelain<br>
+                <b>Eyes</b>: Gray<br> 
+                <b>Distinguishing marks</b>: A <br>
+                tattoo of a rose adorning her
+                thigh, a mole at the corner of <br> 
+                her left eye, a mole at the 
+                corner of the mouth<br>
+                <b>Clothing</b>: Often black clothing <br>
+                that either shows skin or leaves  
+                little to the imagination <br>
+                with a taste for soft finer fabrics
+                like silk. <br>
+                Adorns herself with rose motifs.</p><br>
+                <p style="font-size: 80%"><b><em>personality:</em></b></p>
+                <b>Temperament</b>: Extroverted tendencies whether inserting herself into situations or creating situations herself. She aims to serve as a reminder to unsuspecting people, speaking and acting her mind almost without remorse. The tone of her voice remains smooth, sickeningly like honey as her actions and the pain of those around her do nothing to tarnish her attitude. Seeing suffering is her pleasure. The blight is her pleasure. <br>
+                <b>Moral/Ethical Beliefs</b>: Those who fall are weak, yet perfect fodder for Talon.<br>
+                <b>Religious beliefs</b>: N/A<br>
+                <b>Political Stance</b>: Talon did and does nothing wrong. <br>
+                <b>Hobbies</b>: Dabbles in exotic dancing and occasionally plays the harp. <br>
+                <b>Habits</b>: Attempts to draw the worst out of people once their guard is down. Her notable habit is fidgeting when she becomes impatient. <br>
+                <b>Quirks</b>: Plays with fire. <br>
+                <b>Likes</b>: Food: chocolate, pastas, pizza, chocolate candies, gummies, steamed vegetables, onion, garlic. People (traits): Talon <br>
+                <b>Dislikes</b>: Food: sour things. People (traits): kindness/niceness, weakness. <br>
+                <b>Fears</b>: [ REDACTED ] <br>
+                <b>Strengths</b>: Aside from being a pyromaniac, she is rather agile and has decent stamina due to starting gymnastics at a young age. <br>
+                <b>Weaknesses</b>: A human "happy pill". People that radiate positive vibes irritate her. <br>
+                <b>Skills</b>: Baking: Good enough to bake intricate desserts with a cookie recipe that puts grandma to shame. Fire: Specializes in developing incendiary weapons. <br>
+                <b>Secrets</b>: [ REDACTED ] <br>
+                <div class="removecontent">
+                    <p id="page1">
+                    </p>
+                    <p id="page2">
+                        <p style="font-size: 80%"><b><em>personality:</em></b></p>
+                        <b>Temperament</b>: Extroverted tendencies whether inserting herself into situations or creating situations herself. She aims to serve as a reminder to unsuspecting people, speaking and acting her mind almost without remorse. The tone of her voice remains smooth, sickeningly like honey as her actions and the pain of those around her do nothing to tarnish her attitude. Seeing suffering is her pleasure. The blight is her pleasure. <br>
+                        <b>Moral/Ethical Beliefs</b>: Those who fall are weak, yet perfect fodder for Talon.<br>
+                        <b>Religious beliefs</b>: N/A<br>
+                        <b>Political Stance</b>: Talon did and does nothing wrong. <br>
+                        <b>Hobbies</b>: Dabbles in exotic dancing and occasionally plays the harp. <br>
+                        <b>Habits</b>: Attempts to draw the worst out of people once their guard is down. Her notable habit is fidgeting when she becomes impatient. <br>
+                        <b>Quirks</b>: Plays with fire. <br>
+                        <b>Likes</b>: Food: chocolate, pastas, pizza, chocolate candies, gummies, steamed vegetables, onion, garlic. People (traits): Talon <br>
+                        <b>Dislikes</b>: Food: sour things. People (traits): kindness/niceness, weakness. <br>
+                        <b>Fears</b>: [ REDACTED ] <br>
+                        <b>Strengths</b>: Aside from being a pyromaniac, she is rather agile and has decent stamina due to starting gymnastics at a young age. <br>
+                        <b>Weaknesses</b>: A human "happy pill". People that radiate positive vibes irritate her. <br>
+                        <b>Skills</b>: Baking: Good enough to bake intricate desserts with a cookie recipe that puts grandma to shame. Fire: Specializes in developing incendiary weapons. <br>
+                        <b>Secrets</b>: [ REDACTED ] <br>
+                    </p>
+                    <p id="page3">A familiar warmth left. The townspeople drive her out, blaming her for the death. She did not blame them for their ignorance, as old towns lack the resources to understand more, she presumes. Her fingers travel along the sky, and with a soft whisper of her blessing she casts forth a brilliant light.</p>
+                    <p id="page4">Glyphs illuminate her surroundings for a moment. A star shines bright in the west; a precious reminder of the one she cherishes as Mother. Towns and towns after replay the same event. One town she finds beings similar to herself; those not human and a little different. She makes her first friend. She falls in love.</p>
+                    <p id="page5">A softened heart has no barriers. With her guard down, she takes a sip from a glass that smelled a little odd. The next day she woke, no one was there. She felt amiss and sore, once pale and perfect skin littered with bruises and cuts. Tears threaten to spill, but she limps on with shallow breaths and aching legs.</p>
+                    <p id="page6">The wings on her back curl. She swore the stars above whisper words of encouragement, but she could not even recall the last time she had the strength to fly, and only swears in response. Another town. She ran into bounty hunters, claiming they could exchange a Celestial's head for a large sum of money.</p>
+                    <p id="page7">She grew sick of it. Sick of constantly running. Sick of being used. Sick of existence. The events unfold so quickly that vestiges of memories diminish to haphazard blurs and flashes, but it felt like moments before nothing was left of the town. She leaves, no destination in particular in mind.</p>
+                </div>
+                <div class="pagescroller">
+                    <a class="underline" href="#page1"><span>1</span></a>
+                    <a class="underline" href="#page2"><span>2</span></a>
+                    <a class="underline" href="#page3"><span>3</span></a>
+                    <a class="underline" href="#page4"><span>4</span></a>
+                    <a class="underline" href="#page5"><span>5</span></a>
+                    <a class="underline" href="#page6"><span>6</span></a>
+                    <a class="underline" href="#page7"><span>7</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
