@@ -1,0 +1,128 @@
+<style>
+    #bioClick, #oocClick, #peopleClick, #statsClick {
+      z-index: 15;
+      display: none;
+      color: white;
+      position: absolute;
+      padding-left: 25px;
+      padding-top: -3px;
+      /*font-family:arial, helvetica, sans serif;*/
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:13px;
+      text-align:center;
+      font-style: italic;
+      font-weight: bold;
+      height: 20px;
+      width: 150px;
+      }
+
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+      
+     #text {
+      width: 500px;
+      height: 100px;
+      position: absolute
+      }
+      
+    #container {
+      height: 300px;
+      width: 50px;
+      position: relative;
+      } 
+
+    .clicker1:focus + #statsClick {
+        display: block;
+    }
+
+    .clicker2:focus + #bioClick {
+        display: block;
+    }
+
+    .clicker3:focus + #peopleClick {
+        display: block;
+    }
+
+    .clicker4:focus + #oocClick {
+        display: block;
+    }
+
+    button {
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    </style>
+
+
+<div style="max-width:725px;width:100%;margin:10px auto;font-family:arial, helvetica, sans serif;font-size:13px;text-align:center;color:#000;background:transparent;">
+
+    <!-- THE IMAGE BOARD -->
+    <div style="display:grid;grid-template-columns:2fr minmax(75px, 20%) 3fr minmax(5px, 25px);grid-template-rows: repeat(12, 36px);gap:10px;">
+    
+    <div style="grid-column-start:1;grid-column-end:2;grid-row-start:1;grid-row-end:5;background:#509fd3 url('https://i.pinimg.com/originals/18/7a/2a/187a2a706b9988e4c144f1002627a35d.gif')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <div style="grid-column-start:1;grid-column-end:2;grid-row-start:5;grid-row-end:13;background:#509fd3 url('https://cdnb.artstation.com/p/assets/images/images/031/327/269/large/citemer-liu-lux4xiao.jpg?1603293256')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <div style="grid-column-start:2;grid-column-end:3;grid-row-start:1;grid-row-end:9;background:#8fbbd9 url('https://cdna.artstation.com/p/assets/images/images/031/327/262/large/citemer-liu-lux2.jpg?1603293241')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <!-- SMALL NAVIGATION -->
+    <button input type="button" class="clicker1" name="answer" value="1" class="bioClick" tabindex="1" id="toggle" onclick="showDiv('statsClick')" style="grid-column-start:2;grid-column-end:3;grid-row-start:9;grid-row-end:10;display:flex;align-items:center;justify-content:center;font-size: clamp(10px, .9vw, 13px);text-decoration:none;color:#fff;background: rgb(245, 245, 95) url('')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;">Stats</button>
+        <div id="statsClick">
+            <h3>Simplicities</h3>
+            Name: Luxanna Crownguard<br>
+            Nickname: Lux, Lady of Luminosity<br>
+            Occupation: Battle Bunny + Matti's Waifu<br>
+        </div>
+
+    <button input type="button"  class ="clicker2" name="answer" value="2" class="bioClick" tabindex="1" id="toggle" onclick="showDiv('bioClick')" style="grid-column-start:2;grid-column-end:3;grid-row-start:10;grid-row-end:11;display:flex;align-items:center;justify-content:center;font-size: clamp(10px, .9vw, 13px);text-decoration:none;color:#fff;background: rgb(245, 245, 95) url('')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;">Bio</button>
+        <div id="bioClick">
+            <h3>About</h3>
+            A lady blessed with light magic.</div>
+
+    <button input type="button" class="clicker3" name="answer" value="3" class="bioClick" tabindex="1" id="toggle" onclick="showDiv('peopleClick')" style="grid-column-start:2;grid-column-end:3;grid-row-start:11;grid-row-end:12;display:flex;align-items:center;justify-content:center;font-size: clamp(10px, .9vw, 13px);text-decoration:none;color:#fff;background: rgb(245, 245, 95) url('')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;">People</button>
+        <div id="peopleClick">
+            <h3>The Light in My Life</h3>
+            He's in the title.</div>     
+        
+    <button input type="button" class="clicker4" name="answer" value="4" class="bioClick" tabindex="1" id="toggle" onclick="showDiv('oocClick')" style="grid-column-start:2;grid-column-end:3;grid-row-start:12;grid-row-end:13;display:flex;align-items:center;justify-content:center;font-size: clamp(10px, .9vw, 13px);text-decoration:none;color:#fff;background: rgb(245, 245, 95) url('')center;background-size:cover;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;">OOC</button>
+        <div id="oocClick">
+            <h3>OOC Things</h3>
+            Edited existing code.<br>
+            Story is appreciated.<br>
+            Smut with character's paramour only.<br>
+        </div>
+
+    <!-- SMALL NAVIGATION -->
+    
+    <div style="grid-column-start:3;grid-column-end:4;grid-row-start:1;grid-row-end:8;margin-top:25px;background:#509fd3 url('https://64.media.tumblr.com/d65418b9aa22de124f89c7f63afcb6a9/62288fda848c4fe3-c1/s1280x1920/e492c24e171c04b2f297b8f627ab65414a870ce8.jpg')bottom right;background-size:130%;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;">
+<!--         <div class="hidden" id="statsClick">uwu
+        </div>
+        <div class="hidden" id="bioClick">uwu
+        </div>
+        <div class="hidden" id="peopleClick">uwu
+        </div>
+        <div class="hidden" id="oocClick">uwu
+        </div> -->
+    </div>
+    
+    <div style="grid-column-start:3;grid-column-end:4;grid-row-start:8;grid-row-end:13;background:#509fd3 url('https://cdn.donmai.us/original/49/2a/492a750f84cd995717a89f71164b0b0f.jpg')center;background-size:130%;box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <h1 style="grid-column-start:3;grid-column-end:4;grid-row-start:1;grid-row-end:2;display:flex;padding:0 2px 0 0;margin:0;justify-content:flex-end;align-items:start;line-height:.8;text-align:right;font-size:clamp(15px, 2vw, 25px);font-weight:700;font-style:italic;text-shadow:2px 2px #fff;color:rgb(98, 154, 227);">&#9829;<a target="_blank" href="https://roleplay.chat/profile.php?user=Mattimeo">Matti's</a> Bunny&#9829;</h1>
+    
+    <div style="grid-column-start:4;grid-column-end:5;grid-row-start:1;grid-row-end:4;padding:5px 0 0 0;background: rgb(98, 154, 227); box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <div style="grid-column-start:4;grid-column-end:5;grid-row-start:4;grid-row-end:7;padding:5px 0 0 0;background: rgb(98, 154, 227); box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <div style="grid-column-start:4;grid-column-end:5;grid-row-start:7;grid-row-end:10;padding:5px 0 0 0;background: rgb(98, 154, 227); box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    <div style="grid-column-start:4;grid-column-end:5;grid-row-start:10;grid-row-end:13;padding:5px 0 0 0;background: rgb(98, 154, 227); box-shadow: rgba(130, 130, 130, 0.3) 0px 1px 2px 0px, rgba(130, 130, 130, 0.15) 0px 2px 6px 2px;"></div>
+    
+    </div>
+    <!-- THE IMAGE BOARD: END -->
+    <!-- CREDIT -->
+    <div style="width:100%;text-align:right;"><a href="https://10billionghosts.dreamwidth.org/" style="font-size:8px;text-decoration:none;color:#CBCCDA;">code</a></div>
+    <!-- CREDIT -->
+    </div>
