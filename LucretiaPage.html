@@ -8,7 +8,7 @@
         /* Background image. */
         body {
             background-image: url("https://rare-gallery.com/uploads/posts/120485-red-roses-rose-flowers-dark-background-4k.jpg");
-            background-position: center;
+            background-position: left;
             background-repeat: no-repeat;
             width: 100vw;
             height: 100vh;
@@ -23,6 +23,11 @@
             box-sizing: border-box;
         }
 
+        .content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
         /* Formatting column size and position. */
         .column {
             float: left;
@@ -32,17 +37,17 @@
 
         .left, .right {
             width: 30%;
-            margin-top: 27%;
+            margin-top: 10%;
         }
 
         .middle {
             width: 40%;
-            margin-top: 18%;
+            margin-top: 5%;
         }
 
         /* Centering columns. */
         .row {
-            margin-left: 20px;
+            margin-left: -25px;
             margin-right: auto;
             width: 1300px;
         }
@@ -118,7 +123,7 @@
         .textboxright {
             line-height: 18px;
             margin: 10px;
-            margin-top: 4.5%;
+            margin-top: 2%;
             margin-left: 5%;
             padding: 8px;
             padding-top: 1px;
@@ -126,9 +131,9 @@
             height: 93%;
             background-color: rgba(38, 5, 11, 0.7);
             border: 3px solid rgba(231, 219, 221, 0.8);
-            /* overflow:hidden;
+            overflow:scroll;
             overflow-x: hidden;
-            scrollbar-color: rgb(226, 78, 102) rgb(226, 72, 97); */
+            scrollbar-color: rgb(226, 78, 102) rgb(226, 72, 97);
         }
 
         /* Formatting column fade. */
@@ -176,7 +181,7 @@
 
         /* Scrolling content in right column. */
         .pagescroller {
-            text-align: center;
+            color:black;
         }
 
         /* Changing hyperlink color in page scroller. */
@@ -257,6 +262,7 @@
 </head>
 
 <body>
+    <div class="content">
     <!-- <h2>The Calamity</h2> -->
 
     <div class="row">
@@ -291,19 +297,8 @@
                 <h2 style="font-style: italic">a simple history</h2>
                 <!-- <center><p style="font-size: 60%"><em>trigger warning: sexual misconduct.</em></p></center> -->
                 <!-- <p id="content">She remembers nothing of her origins except awakening in a crater. Flashes of hot white and crimson flash as she tries to recall anything beyond awakening, a searing pain following. Finding a place to stay proved difficult, ragged after climbing out of the crater and managing to find a town only after hours of searching.</p> -->
-                <div class="removecontent">
-                    <div class="pagescroller">
-                        <a class="underline" href="#page1"><span>1</span></a>
-                        <a class="underline" href="#page2"><span>2</span></a>
-                        <a class="underline" href="#page3"><span>3</span></a>
-                        <a class="underline" href="#page4"><span>4</span></a>
-                        <a class="underline" href="#page5"><span>5</span></a>
-                        <a class="underline" href="#page6"><span>6</span></a>
-                        <a class="underline" href="#page7"><span>7</span></a>
-                    </div>
-                    <p id="page1">
-                        <!-- <p style="font-size: 80%"><b><em>appearance:</em></b></p> -->
-                        <b>Height</b>: 5’9”<br>
+                        <p style="font-size: 80%"><b><em>appearance:</em></b></p>
+                        <p><b>Height</b>: 5’9”<br>
                         <b>Weight</b>: 153 lbs<br>
                         <b>Hair</b>: Obsidian, knee-length<br>
                         <b>Skin</b>: Porcelain<br>
@@ -318,10 +313,10 @@
                         little to the imagination <br>
                         with a taste for soft finer fabrics
                         like silk. <br>
-                        Adorns herself with rose motifs.</p>
-                    <p id="page2">
-                        <!-- <p style="font-size: 80%"><b><em>personality:</em></b></p> -->
-                        <b>Temperament</b>: Extroverted tendencies whether inserting herself into situations or creating situations herself. She aims to serve as a reminder to unsuspecting people, speaking and acting her mind almost without remorse. The tone of her voice remains smooth, sickeningly like honey as her actions and the pain of those around her do nothing to tarnish her attitude. Seeing suffering is her pleasure. The blight is her pleasure. <br>
+                        Adorns herself with rose motifs.</p> <br>
+
+                        <p style="font-size: 80%"><b><em>personality:</em></b></p>
+                        <p><b>Temperament</b>: Extroverted tendencies whether inserting herself into situations or creating situations herself. She aims to serve as a reminder to unsuspecting people, speaking and acting her mind almost without remorse. The tone of her voice remains smooth, sickeningly like honey as her actions and the pain of those around her do nothing to tarnish her attitude. Seeing suffering is her pleasure. The blight is her pleasure. <br>
                         <b>Moral/Ethical Beliefs</b>: Those who fall are weak, yet perfect fodder for Talon.<br>
                         <b>Religious beliefs</b>: N/A<br>
                         <b>Political Stance</b>: Talon did and does nothing wrong. <br>
@@ -334,27 +329,45 @@
                         <b>Strengths</b>: Aside from being a pyromaniac, she is rather agile and has decent stamina due to starting gymnastics at a young age. <br>
                         <b>Weaknesses</b>: A human "happy pill". People that radiate positive vibes irritate her. <br>
                         <b>Skills</b>: Baking: Good enough to bake intricate desserts with a cookie recipe that puts grandma to shame. Fire: Specializes in developing incendiary weapons. <br>
-                        <b>Secrets</b>: [ REDACTED ] </p>
-                    </p>
-                    <p id="page3">A familiar warmth left. The townspeople drive her out, blaming her for the death. She did not blame them for their ignorance, as old towns lack the resources to understand more, she presumes. Her fingers travel along the sky, and with a soft whisper of her blessing she casts forth a brilliant light.</p>
-                    <p id="page4">Glyphs illuminate her surroundings for a moment. A star shines bright in the west; a precious reminder of the one she cherishes as Mother. Towns and towns after replay the same event. One town she finds beings similar to herself; those not human and a little different. She makes her first friend. She falls in love.</p>
-                    <p id="page5">A softened heart has no barriers. With her guard down, she takes a sip from a glass that smelled a little odd. The next day she woke, no one was there. She felt amiss and sore, once pale and perfect skin littered with bruises and cuts. Tears threaten to spill, but she limps on with shallow breaths and aching legs.</p>
-                    <p id="page6">The wings on her back curl. She swore the stars above whisper words of encouragement, but she could not even recall the last time she had the strength to fly, and only swears in response. Another town. She ran into bounty hunters, claiming they could exchange a Celestial's head for a large sum of money.</p>
-                    <p id="page7">She grew sick of it. Sick of constantly running. Sick of being used. Sick of existence. The events unfold so quickly that vestiges of memories diminish to haphazard blurs and flashes, but it felt like moments before nothing was left of the town. She leaves, no destination in particular in mind.</p>
-                </div>
-                <div class="pagescroller">
-                    <a class="underline" href="#page1"><span>1</span></a>
-                    <a class="underline" href="#page2"><span>2</span></a>
-                    <a class="underline" href="#page3"><span>3</span></a>
-                    <a class="underline" href="#page4"><span>4</span></a>
-                    <a class="underline" href="#page5"><span>5</span></a>
-                    <a class="underline" href="#page6"><span>6</span></a>
-                    <a class="underline" href="#page7"><span>7</span></a>
-                </div>
+                        <b>Secrets</b>: [ REDACTED ] </p><br>
+
+                        <p style="font-size: 80%"><b><em>gear:</em></b></p>
+                        <p><b>Always has</b>:
+                        Whip: Barbed like a rose with thorns and 12 feet in length.<br>
+                        Some form of incendiary fuel and/or weapon.<br>
+                        <b>Sometimes has</b>:
+                        Snacks, whether it be candies, cookies, or something else sweet.<br>
+                        Tsumi, Batsu, or both.<br>
+                        <br>
+                        <i>Writer will be adding more on arsenal in the near future.</i></p><br>
+
+                        <p style="font-size: 80%"><b><em>events and history:</em></b></p>
+                        <b>Recent notable events</b>
+                        <ul>
+                        <li>Is the suspected perpetrator in a recent lab break-in that resulted in destruction of the lab and surrounding area.</li>
+                        <li>Became an acknowledged Talon agent after years of operating quietly.</li>
+                        </ul>
+
+                        <b>Bad events in the past</b>
+                        <ul>
+                        <li>She has assisted in a string of incidents involving stolen valuable assets with acute aarson. Any traces of her presence became ash, and the only time she has been caught on camera is to simply taunt whoever is watching. </li>
+                        </ul>
+
+                        <b>Good events in the past</b>
+                        <ul>
+                        <li>Adopting her two dogs, Tsumi and Batsu. They were young pups at the time, but have grown into two wonderful babies for her to train and spoil.</li>
+                        <li>Eating apple pie for the first time as a child. The core memory is what influences her love for baking. Experiencing the sweetness of apple pie is something she adores, childish or not.</li>
+                        <li>Became a member of Talon at the age of 22.</li>
+                        </ul>
+
+                        <b>History</b><br>
+                        The youngest child and only daughter of the affluent Kanemoto family. A well-known businessman, Asahi Kanemoto moved to America at a young age and married Elizabeth Harle, the youngest daughter of the Harle family. Lucretia came along only a couple years into the marriage, and grew under the guidance of her father to hopefully inherit his business.
+                        How she ended up working for Talon is a mystery, but some records detailing a "Lucretia Kanemoto" disappearing around 4 years ago can be found.
+                        Writer sucks at writing histories so this is what writer has. Writer is hoping the other noted details suffice.
             </div>
         </div>
     </div>
-
+    </div>
 </body>
 </html>
 
