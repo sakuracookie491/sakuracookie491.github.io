@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>⋞ Irae ⋟</title>
+    <style>
+
+        /* Background image. */
+        body {
+            background-image: url("https://wallpapercave.com/wp/wp6241485.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Formatting column size and position. */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .left, .right {
+            width: 30%;
+            margin-top: 27%;
+        }
+
+        .middle {
+            width: 40%;
+            margin-top: 18%;
+        }
+
+        /* Centering columns. */
+        .row {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+        /* Formatting column content.*/
+        .left, .right {
+            /* adjusts text height. */
+            line-height: 16px;
+            width: 300px;
+            height: 400px;
+            overflow: hidden;
+            /*overflow-x: hidden;*/
+            border: 5px solid rgba(159, 96, 159, .2);
+            /* background: rgba(207, 175, 207, .8); */
+            scrollbar-color: pink pink;
+            font-family: Georgia;
+            color: rgb(239, 125, 144);
+        }
+
+        .middle {
+            width: 400px;
+            height: 600px;
+            background: rgba(221, 184, 207, .3);
+            font-family: Georgia;
+            text-align: center;
+            color: rgba(217, 46, 33, .6);
+        }
+
+        .left {
+            background-image: url("https://data.whicdn.com/images/321765404/original.jpg");
+            background-position: right;
+            /*overflow-y: hidden;*/
+        }
+
+        .right {
+            background-image: url("https://data.whicdn.com/images/321765404/original.jpg");
+            /* background-position: top; */
+            /* animation: hide-scroll 3.9s; */
+        }
+
+        /* @keyframes hide-scroll {
+                    from,
+                    to {
+                    overflow: hidden;
+                    }
+               } */
+
+        /* Formatting text boxes. */
+        .textboxleft {
+            line-height: 16px;
+            margin: 10px;
+            margin-top: 4.5%;
+            margin-left: 5%;
+            padding: 8px;
+            padding-top: 1px;
+            width: 240px;
+            height: 93%;
+            background-color: rgba(238, 185, 194, .7);
+            border: 3px solid rgba(239, 125, 144, .8);
+        }
+
+        .textboxright {
+            line-height: 18px;
+            margin: 10px;
+            margin-top: 4.5%;
+            margin-left: 5%;
+            padding: 8px;
+            padding-top: 1px;
+            width: 240px;
+            height: 93%;
+            background-color: rgba(238, 185, 194, .7);
+            border: 3px solid rgba(239, 125, 144, .8);
+        }
+
+        /* Formatting column fade. */
+        .fade-in {
+            opacity: 1;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Formatting right column text fade out. */
+        .fade-out {
+            opacity: 0;
+            animation-name: fadeInOpacity;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-out;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeOutOpacity {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Hiding text in right column. */
+        /*.hidden {
+                    display: none;
+                }*/
+
+        /* Scrolling content in right column. */
+        .pagescroller {
+            text-align: center;
+        }
+
+        /* Changing hyperlink color in page scroller. */
+        .underline {
+            color: rgba(217, 46, 33, .6);
+        }
+
+            /* Changing hyperlink underline color in page scroller. */
+            .underline span {
+                color: rgba(217, 46, 33, .6);
+            }
+
+        /* Setting up page display. */
+        #page1 {
+            display: none;
+        }
+
+            #page1:target {
+                display: block;
+            }
+
+        #page2 {
+            display: none;
+        }
+
+            #page2:target {
+                display: block;
+            }
+
+        #page3 {
+            display: none;
+        }
+
+            #page3:target {
+                display: block;
+            }
+
+        #page4 {
+            display: none;
+        }
+
+            #page4:target {
+                display: block;
+            }
+
+        #page5 {
+            display: none;
+        }
+
+            #page5:target {
+                display: block;
+            }
+
+        #page6 {
+            display: none;
+        }
+
+            #page6:target {
+                display: block;
+            }
+
+        #page7 {
+            display: none;
+        }
+
+            #page7:target {
+                display: block;
+            }
+
+        #page8 {
+            display: none;
+        }
+
+            #page8:target {
+                display: block;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>The Calamity</h2> -->
+
+    <div class="row">
+        <div class="column left fade-in">
+            <!-- basic info left column -->
+            <div class="textboxleft">
+                <h2 style="font-style: italic">a simple study</h2>
+                <p>
+                    Irae, also known as <b>I.D.</b>,<br>
+                    is a <b>Celestial</b> of unknown age<br>
+                    unknown origin.<br>
+                <p style="font-size: 80%"><b><em>noticeable markings:</em></b></p>
+                <p>
+                    ☪ A crescent moon on her back.<br>
+                    ☪ Glyphs adorning her palms.<br>
+                    ☪ A natural moonlit glow.
+                </p>
+                <p style="font-size: 80%"><b><em>favorable things:</em></b></p>
+                <p>
+                    ☪ Foods sweet on the tongue.<br>
+                    ☪ The chill of a starry night.<br>
+                    ☪ A precise swipe of her rapier.
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <div class="column middle">
+            <!-- image of Irae in the center column -->
+            <p><img src="https://pbs.twimg.com/media/DQE-nt7XkAAAuCU?format=jpg&name=medium" width="380" height="485"></p>
+            <h3>ʚ the Calamity ɞ</h3>
+            <h5 style="color: rgba(217, 46, 33, .6)"><b><em>❝ No one will control my destiny.❞ </em></b></h5>
+        </div>
+
+        <div class="column right fade-in">
+            <!-- biography right column-->
+            <div class="textboxright">
+                <h2 style="font-style: italic">a simple history</h2>
+                <center><p style="font-size: 60%"><em>trigger warning: sexual misconduct.</em></p></center>
+                <!-- <p id="content">She remembers nothing of her origins except awakening in a crater. Flashes of hot white and crimson flash as she tries to recall anything beyond awakening, a searing pain following. Finding a place to stay proved difficult, ragged after climbing out of the crater and managing to find a town only after hours of searching.</p> -->
+                <div class="removecontent">
+                    <p id="page1">She remembers nothing of her origins except awakening in a crater. Flashes of hot white and crimson flash as she tries to recall anything beyond awakening, a searing pain following. Finding a place to stay proved difficult, ragged after climbing out of the crater and managing to find a town only after hours of searching.</p>
+                    <p id="page2">A quaint home with an elderly woman becomes her place of residence. Stares annoy her, but she assumes Celestials were a rare sight in the Earthen realm. An old lady did not mind taking her in, the fallen Celestial finding solace in the closest thing she could call a home. One day, she wakes alone.</p>
+                    <p id="page3">A familiar warmth left. The townspeople drive her out, blaming her for the death. She did not blame them for their ignorance, as old towns lack the resources to understand more, she presumes. Her fingers travel along the sky, and with a soft whisper of her blessing she casts forth a brilliant light.</p>
+                    <p id="page4">Glyphs illuminate her surroundings for a moment. A star shines bright in the west; a precious reminder of the one she cherishes as Mother. Towns and towns after replay the same event. One town she finds beings similar to herself; those not human and a little different. She makes her first friend. She falls in love.</p>
+                    <p id="page5">A softened heart has no barriers. With her guard down, she takes a sip from a glass that smelled a little odd. The next day she woke, no one was there. She felt amiss and sore, once pale and perfect skin littered with bruises and cuts. Tears threaten to spill, but she limps on with shallow breaths and aching legs.</p>
+                    <p id="page6">The wings on her back curl. She swore the stars above whisper words of encouragement, but she could not even recall the last time she had the strength to fly, and only swears in response. Another town. She ran into bounty hunters, claiming they could exchange a Celestial's head for a large sum of money.</p>
+                    <p id="page7">She grew sick of it. Sick of constantly running. Sick of being used. Sick of existence. The events unfold so quickly that vestiges of memories diminish to haphazard blurs and flashes, but it felt like moments before nothing was left of the town. She leaves, no destination in particular in mind.</p>
+                </div>
+                <div class="pagescroller">
+                    <a class="underline" href="#page1"><span>1</span></a>
+                    <a class="underline" href="#page2"><span>2</span></a>
+                    <a class="underline" href="#page3"><span>3</span></a>
+                    <a class="underline" href="#page4"><span>4</span></a>
+                    <a class="underline" href="#page5"><span>5</span></a>
+                    <a class="underline" href="#page6"><span>6</span></a>
+                    <a class="underline" href="#page7"><span>7</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
